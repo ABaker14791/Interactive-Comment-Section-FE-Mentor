@@ -1,0 +1,40 @@
+.commentBox {
+    background-color: #fff;
+    margin-top: 20px;
+    padding:20px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+    padding: 20px 30px 50px 30px;
+    border: 1px solid hsl(223, 19%, 93%);
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.commentBox__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    background-image: url(../../assets/avatars/image-juliusomo.png);
+    width: 42px;
+    height: 42px;
+    background-size: cover;
+}
+
+.sendBtn {
+    background-color: hsl(238, 40%, 52%);
+    padding: 16px 24px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}
