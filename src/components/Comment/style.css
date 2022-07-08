@@ -14,10 +14,8 @@
 }
 
 .commentHeader__icon {
-   /* background-image: url(../../assets/avatars/image-juliusomo.png); */
    width: 42px;
    height: 42px;
-   /* background-size: cover; */
 }
 
 .commentHeader__userName {
@@ -81,4 +79,5 @@
    display:flex;
    align-items:center;
    margin-left:1rem;
+   cursor: pointer;
 }

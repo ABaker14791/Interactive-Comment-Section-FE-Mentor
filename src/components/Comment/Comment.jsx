@@ -18,7 +18,9 @@ const Comment = () => {
               <div className="commentHeader__userName">
                 {comment.user.username}
               </div>
-              <div className="commentHeader__datePosted">2 days ago</div>
+              <div className="commentHeader__datePosted">
+                {comment.createdAt}
+              </div>
             </div>
 
             <div className="comment__content">{comment.content}</div>

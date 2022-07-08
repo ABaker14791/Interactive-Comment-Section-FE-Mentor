@@ -23,12 +23,12 @@
 }
 
 body {
-    background-color:hsl(228, 33%, 97%);
+    background-color:var(--veryLightGray);
 
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
