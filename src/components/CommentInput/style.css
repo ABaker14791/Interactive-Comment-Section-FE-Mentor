@@ -5,12 +5,9 @@
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-}
-
-@media (min-width: 768px) {
-    .commentBox {
-        max-width:800px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .inputBox {
@@ -28,12 +25,6 @@
     border:2px solid var(--moderateBlue);
 }
 
-.commentBox__flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .icon {
     width: 42px;
     height: 42px;
@@ -49,8 +40,31 @@
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
+
 }
 
 .sendBtn:hover {
     opacity: 50%;
+}
+
+@media (min-width: 768px) {
+    .commentBox {
+        max-width:800px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .icon {
+        order: 1;
+    }
+
+    .inputBox {
+        order: 2;
+    }
+
+    .sendBtn {
+        order:3;
+    }
 }

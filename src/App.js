@@ -3,6 +3,8 @@ import CommentInput from "./components/CommentInput/CommentInput";
 import CommentReply from "./components//CommentReply/CommentReply";
 import "./styles/global.css";
 
+// import commentData from "./data.json";
+
 function App() {
   return (
     <div className="container">

@@ -4,6 +4,8 @@ import "./style.css";
 import Comments from "../../data.json";
 
 const Comment = () => {
+  const currentUser = Comments.currentUser.username;
+  console.log(currentUser);
   return (
     <>
       {Comments.comments.map((comment) => {

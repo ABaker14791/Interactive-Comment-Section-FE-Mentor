@@ -12,10 +12,8 @@ const CommentInput = () => {
         className="inputBox"
         placeholder="Add a comment..."
       ></textarea>
-      <div className="commentBox__flex">
-        <img className="icon" src={avatar} />
-        <button className="sendBtn">SEND</button>
-      </div>
+      <img className="icon" src={avatar} />
+      <button className="sendBtn">SEND</button>
     </div>
   );
 };
