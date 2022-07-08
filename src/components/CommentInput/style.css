@@ -4,6 +4,13 @@
     padding:20px;
     border-radius: 10px;
     width: 90%;
+    max-width: 600px;
+}
+
+@media (min-width: 768px) {
+    .commentBox {
+        max-width:800px;
+    }
 }
 
 .inputBox {
@@ -14,6 +21,11 @@
     resize: none;
     font-size: 16px;
     width: 100%;
+}
+
+.inputBox:focus {
+    outline: none !important;
+    border:2px solid var(--moderateBlue);
 }
 
 .commentBox__flex {
@@ -36,4 +48,9 @@
     border: none;
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.sendBtn:hover {
+    opacity: 50%;
 }

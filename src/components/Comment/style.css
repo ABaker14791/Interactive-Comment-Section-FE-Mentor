@@ -3,7 +3,14 @@
    padding: 20px;
    border-radius: 10px;
    width:90%;
+   max-width: 600px;
    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+   .comment {
+       max-width:800px;
+   }
 }
 
 /* Header styles */
@@ -40,6 +47,7 @@
    padding:8px 10px;
    color: var(--lightGrayishBlue);
    font-size: 16px;
+   cursor: pointer;
 }
 
 .score {
@@ -56,6 +64,12 @@
    padding:8px 10px;
    color: var(--lightGrayishBlue);
    font-size: 16px;
+   cursor: pointer;
+}
+
+.increment:hover, .decrement:hover {
+   color: var(--moderateBlue);
+   font-weight: bold;
 }
 
 /* Footer styles */
@@ -80,4 +94,8 @@
    align-items:center;
    margin-left:1rem;
    cursor: pointer;
+}
+
+.comment__replyBtn:hover {
+   opacity: 50%;
 }

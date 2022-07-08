@@ -22,7 +22,10 @@ const CommentReply = () => {
               <div className="replyHeader__datePosted">{reply.createdAt}</div>
             </div>
 
-            <div className="reply__content">{reply.content}</div>
+            <div className="reply__content">
+              <span className="replyTag">@{reply.replyingTo}</span>
+              {reply.content}
+            </div>
 
             <div className="replyFooter">
               <div className="pointsGroup">
