@@ -1,15 +1,12 @@
 import React from "react";
 import "./style.css";
 
-import Replies from "../../data.json";
-
-const CommentReply = () => {
-  const userReply = Replies.comments[1].replies;
-  console.log(userReply);
+const CommentReply = ({ user, replies }) => {
+  console.log(user);
 
   return (
     <div className="replyContainer">
-      {userReply.map((reply) => {
+      {replies.map((reply) => {
         return (
           <div className="reply" key={reply.id}>
             <div className="replyHeader">
@@ -33,11 +30,22 @@ const CommentReply = () => {
                 <button className="score">{reply.score}</button>
                 <button className="decrement">-</button>
               </div>
-              {/* ternary operator user===user > del/edit */}
-              <div className="reply__replyBtn">
-                <div className="replyIcon"></div>
-                Reply
-              </div>
+              {user === reply.user.username ? (
+                <div class="reply__editBtnContainer">
+                  <div className="reply__deleteBtn">
+                    <div class="deleteIcon"></div>
+                    <div class="deleteText">Delete</div>
+                  </div>
+                  <div className="reply__editBtn">
+                    <div class="editIcon"></div>Edit
+                  </div>
+                </div>
+              ) : (
+                <div className="reply__replyBtn">
+                  <div className="replyIcon"></div>
+                  Reply
+                </div>
+              )}
             </div>
           </div>
         );

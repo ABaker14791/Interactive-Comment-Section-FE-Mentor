@@ -4,8 +4,6 @@ import "./style.css";
 import Comments from "../../data.json";
 
 const Comment = () => {
-  const currentUser = Comments.currentUser.username;
-  console.log(currentUser);
   return (
     <>
       {Comments.comments.map((comment) => {
@@ -33,7 +31,7 @@ const Comment = () => {
                 <button className="score">{comment.score}</button>
                 <button className="decrement">-</button>
               </div>
-              {/* ternary operator user===user > del/edit */}
+              {/* if comment.user.username === currentUser show del/edit : reply */}
               <div className="comment__replyBtn">
                 <div className="replyIcon"></div>
                 Reply

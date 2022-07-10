@@ -1,6 +1,7 @@
 .commentBox {
     background-color: #fff;
     margin-top: 20px;
+    margin-bottom: 30px;
     padding:20px;
     border-radius: 10px;
     width: 90%;
@@ -40,7 +41,6 @@
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
-
 }
 
 .sendBtn:hover {

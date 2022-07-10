@@ -106,3 +106,49 @@
  .reply__replyBtn:hover {
    opacity: 50%;
  }
+
+ .reply__editBtnContainer {
+   display: flex;
+ }
+
+ .editIcon {
+   background-image: url(../../assets/images/icon-edit.svg);
+   width: 16px;
+   height: 16px;
+   background-repeat: no-repeat;
+   margin-right: 4px;
+}
+
+.reply__editBtn {
+   color: var(--moderateBlue);
+   font-weight: bold;
+   align-items:center;
+   margin-left:1rem;
+   display:flex;
+   cursor:pointer;
+}
+
+.reply__deleteBtn {
+   color: var(--softRed);
+   font-weight: bold;
+   align-items:center;
+   margin-left:1rem;
+   display:flex;
+   cursor:pointer;
+}
+
+.reply__deleteBtn:hover {
+   opacity: 50%;
+ }
+
+.reply__editBtn:hover {
+  opacity: 50%;
+}
+
+.deleteIcon {
+   background-image: url(../../assets/images/icon-delete.svg);
+   width: 16px;
+   height: 16px;
+   background-repeat: no-repeat;
+   margin-right: 4px;
+}
