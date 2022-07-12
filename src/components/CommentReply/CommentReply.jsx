@@ -1,8 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import "./style.css";
 
 const CommentReply = ({ user, replies }) => {
   console.log(user);
+  const [votes, setVotes] = useState(0);
 
   return (
     <div className="replyContainer">
@@ -26,9 +27,19 @@ const CommentReply = ({ user, replies }) => {
 
             <div className="replyFooter">
               <div className="pointsGroup">
-                <button className="increment">+</button>
-                <button className="score">{reply.score}</button>
-                <button className="decrement">-</button>
+                <button
+                  className="increment"
+                  onClick={() => setVotes(votes + 1)}
+                >
+                  +
+                </button>
+                <button className="score">{votes}</button>
+                <button
+                  className="decrement"
+                  onClick={() => setVotes(votes - 1)}
+                >
+                  -
+                </button>
               </div>
               {user === reply.user.username ? (
                 <div class="reply__editBtnContainer">
